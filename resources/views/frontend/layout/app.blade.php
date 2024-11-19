@@ -62,6 +62,7 @@
                     <div class="row">
 
                         <!-- Include the top selling partial -->
+                         @include('frontend.slider.top_selling.type1')
 
 
                     </div>
