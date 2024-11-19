@@ -67,6 +67,9 @@
                         <!-- Include the Trending Products partial -->
                          @include('frontend.slider.trending_products.type1')
 
+                         <!-- Include the recently added Patial -->
+                         @include('frontend.slider.recently_added.type1')
+
 
                     </div>
                 </div>
