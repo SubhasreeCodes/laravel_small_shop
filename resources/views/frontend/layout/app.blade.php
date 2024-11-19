@@ -30,12 +30,76 @@
     <!-- Include the Header Partial -->
      @include('frontend.layout.header')
 
+    
+    <main class="main">
 
-    @yield('content')
+        @if(
 
+            Request::is('login')
+        )
+
+        @yield('content')
+
+        @elseif(Request::is('/'))
+
+            <!-- Include the Featured Categories -->
+            @include('frontend.slider.featured_categories.type1')
+
+            <!-- Include the banner partial -->
+            @include('frontend.slider.banner.type1')
+
+            <!-- Include the Popular Products -->
+            @include('frontend.slider.popular_products.type1')
+
+            <!-- Include the daily best sells partial -->
+            @include('frontend.slider.daily_best_sells.type1')
+
+            <!-- Include the deal of the day partial -->
+            @include('frontend.slider.deal_of_the_day.type1')
+
+            <section class="section-padding mb-30">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Include the top selling partial -->
+
+
+                    </div>
+                </div>
+            </section>
+            @endif
+
+    </main>
 
     <!-- Include the Footer Partial -->
      @include('frontend.layout.footer')
+
+    <!-- Include the Preloader Partial -->
+    @include('frontend.preloader.type1')
+
+     <!-- Vendor JS-->
+    <script src="frontend/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="frontend/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="frontend/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="frontend/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="frontend/js/plugins/slick.js"></script>
+    <script src="frontend/js/plugins/jquery.syotimer.min.js"></script>
+    <script src="frontend/js/plugins/waypoints.js"></script>
+    <script src="frontend/js/plugins/wow.js"></script>
+    <script src="frontend/js/plugins/perfect-scrollbar.js"></script>
+    <script src="frontend/js/plugins/magnific-popup.js"></script>
+    <script src="frontend/js/plugins/select2.min.js"></script>
+    <script src="frontend/js/plugins/counterup.js"></script>
+    <script src="frontend/js/plugins/jquery.countdown.min.js"></script>
+    <script src="frontend/js/plugins/images-loaded.js"></script>
+    <script src="frontend/js/plugins/isotope.js"></script>
+    <script src="frontend/js/plugins/scrollup.js"></script>
+    <script src="frontend/js/plugins/jquery.vticker-min.js"></script>
+    <script src="frontend/js/plugins/jquery.theia.sticky.js"></script>
+    <script src="frontend/js/plugins/jquery.elevatezoom.js"></script>
+    <!-- Template  JS -->
+    <script src="frontend/js/main.js?v=5.3"></script>
+    <script src="frontend/js/shop.js?v=5.3"></script>
     
 </body>
 </html>
