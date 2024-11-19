@@ -62,7 +62,10 @@
                     <div class="row">
 
                         <!-- Include the top selling partial -->
-                         @include('frontend.slider.top_selling.type1')
+                        @include('frontend.slider.top_selling.type1')
+
+                        <!-- Include the Trending Products partial -->
+                         @include('frontend.slider.trending_products.type1')
 
 
                     </div>
