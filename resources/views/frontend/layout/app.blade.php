@@ -70,6 +70,9 @@
                          <!-- Include the recently added Patial -->
                          @include('frontend.slider.recently_added.type1')
 
+                         <!-- Include the Top rated partial -->
+                          @include('frontend.slider.top_rated.type1')
+
 
                     </div>
                 </div>
