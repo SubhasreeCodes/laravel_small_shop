@@ -35,8 +35,9 @@
 
         @if(
 
+            Request::is('/') ||
             Request::is('login') ||
-            Request::is('/')
+            Request::is('forget_password')
         )
 
         @yield('content')
