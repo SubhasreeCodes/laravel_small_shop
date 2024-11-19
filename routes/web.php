@@ -16,9 +16,9 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::prefix('invoice')->group(function () {
     // Route to generate and download the PDF invoice directly
@@ -29,3 +29,6 @@ Route::prefix('invoice')->group(function () {
 });
 
 Route::get('/forget_password',[AuthController::class, 'forget_password'])->name('home.forget_password');
+Route::get('/login',[AuthController::class,'login'])->name('home.login');
+Route::get('/', [AuthController::class, 'home'])->name('home');
+Route::get('/page_not_found',[AuthController::class,'page_not_found'])->name('home.page_not_found');
