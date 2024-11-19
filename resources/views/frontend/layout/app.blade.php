@@ -35,7 +35,8 @@
 
         @if(
 
-            Request::is('login')
+            Request::is('login') ||
+            Request::is('/')
         )
 
         @yield('content')
