@@ -2,7 +2,7 @@
 
 @section('title')
 
-Forget PASSWORD_BCRYPT
+Forget Password Page
 
 @endsection
 
