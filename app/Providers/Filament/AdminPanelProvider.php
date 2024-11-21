@@ -17,6 +17,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Filament\Enums\ThemeMode;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -24,7 +25,10 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            // ->sidebarCollapsibleOnDesktop()
+            ->favicon(asset('images/favicon.png'))
+            ->brandLogo(asset('images/brandlogo.png'))
+            ->defaultThemeMode(ThemeMode::Dark)
+            ->sidebarCollapsibleOnDesktop()
             ->id('admin')
             ->path('admin')
             ->login()
