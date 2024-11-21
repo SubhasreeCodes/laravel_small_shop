@@ -33,3 +33,4 @@ Route::get('/login',[AuthController::class,'login'])->name('home.login');
 Route::get('/', [AuthController::class, 'home'])->name('home');
 Route::get('/page_not_found',[AuthController::class,'page_not_found'])->name('home.page_not_found');
 Route::get('/register',[AuthController::class,'register'])->name('home.register');
+Route::get('/about',[AuthController::class,'about'])->name('home.about');
