@@ -20,6 +20,11 @@ class AuthController extends Controller
         return view('frontend/login');
     }
 
+    public function register(Request $request)
+    {
+        return view('frontend/register');
+    }
+
     public function page_not_found(Request $request)
     {
         return view('frontend/page_not_found/type1');
