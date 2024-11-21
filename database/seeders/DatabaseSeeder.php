@@ -24,6 +24,12 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@gmail.com',
             'password' => Hash::make('admin')
         ]);
+        
+        User::factory()->create([
+            'name' => 'subha',
+            'email' => 'subha@gmail.com',
+            'password' => Hash::make('subha')
+        ]);
 
         // Call the ProductSeeder
         $this->call(ProductSeeder::class);
