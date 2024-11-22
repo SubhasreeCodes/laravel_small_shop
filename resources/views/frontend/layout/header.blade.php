@@ -72,7 +72,7 @@
                         <a href="index.html"><img src="frontend/imgs/theme/logo.svg" alt="logo" /></a>
                     </div>
                     <div class="header-right">
-                        <div class="search-style-2">
+                    <div class="search-style-2">
                             <form action="#">
                                 <select class="select-active">
                                     <option>All Categories</option>
