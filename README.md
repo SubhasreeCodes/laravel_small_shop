@@ -10,12 +10,12 @@ This is a simple e-commerce application built with Laravel. The project focuses 
 The application is designed to provide an intuitive and smooth shopping experience, from browsing products to completing orders.
 
 
-### Home Page
+<!-- ### Home Page
 ![HOME PAGE](public/images/home_page.png)
 
 ### Login Page
 ![LOGIN PAGE](public/images/login_page.png)
 
 ### Register Page
-![REGISTER PAGE](public/images/register_page.png)
+![REGISTER PAGE](public/images/register_page.png) -->
 
