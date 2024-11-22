@@ -39,6 +39,7 @@
             Request::is('login') ||
             Request::is('register') ||
             Request::is('about') ||
+            Request::is('account') ||
             Request::is('forget_password')
         )
 
